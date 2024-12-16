@@ -6,12 +6,12 @@
 / {
 	openthread_config: openthread {
 		compatible = "openthread,config";
-		diag-gpios = <&gpio2 9 GPIO_ACTIVE_HIGH>,		    // LED 0
-			     <&gpio1 10 GPIO_ACTIVE_HIGH>,		    // LED 1
-			     <&gpio2 7 GPIO_ACTIVE_HIGH>,		    // LED 2
-			     <&gpio1 14 GPIO_ACTIVE_HIGH>,		    // LED 3
+		diag-gpios = <&gpio2 9 GPIO_ACTIVE_HIGH>,		    // LED 1
+			     <&gpio1 10 GPIO_ACTIVE_HIGH>,		    // LED 2
+			     <&gpio2 7 GPIO_ACTIVE_HIGH>,		    // LED 3
+			     <&gpio1 14 GPIO_ACTIVE_HIGH>,		    // LED 4
 			     <&gpio1 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,  // Button 1
-			     <&gpio0 4 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,  // Button 4
-			     <&gpio2 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;  // Button 2	
+				 <&gpio0 4 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,  // Button 4
+				 <&gpio2 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;  // Button 2
 	};
 };
